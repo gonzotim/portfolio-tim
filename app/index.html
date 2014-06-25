@@ -1,116 +1,108 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1">
+    <title>Add your page title here</title>
 
-        <meta name="description" content="">
-        <meta name="keywords" content="">        
+    <!-- Bootstrap -->
+    <link href="public/css/main.css" rel="stylesheet">
 
-        <title>Title</title>		
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="//use.typekit.net/wdx2nte.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
-        <link rel="stylesheet" media="screen" href="_/css/app.css">      
-    </head>
-    <body>
-        <div id="viewport" class="container">
 
-            <div class="page-header">
-                <h1>CodeKit Kickoff</h1>
-                <p class="lead">Based on the Twitter Bootstrap basic grid layouts to get you familiar with building within the Bootstrap grid system.</p>
+  </head>
+  <body>
+
+    <ul class="slides">
+      <li class="section contact">
+        <div class="container">
+          <div class="floater">
+          </div>         
+          <div class="details">
+            <div class="photo"></div>
+            <div class="header-block">
+              <h1>Your name</h1>
+              <h2>A pithy tagline</h2>
             </div>
-
-            <h3>Three equal columns</h3>
-            <p>Get three equal-width columns <strong>starting at desktops and scaling to large desktops</strong>. On mobile devices, tablets and below, the columns will automatically stack.</p>
-            <div class="row">
-                <div class="col-md-4">.col-md-4</div>
-                <div class="col-md-4">.col-md-4</div>
-                <div class="col-md-4">.col-md-4</div>
-            </div>
-
-            <h3>Three unequal columns</h3>
-            <p>Get three columns <strong>starting at desktops and scaling to large desktops</strong> of various widths. Remember, grid columns should add up to twelve for a single horizontal block. More than that, and columns start stacking no matter the viewport.</p>
-            <div class="row">
-                <div class="col-md-3">.col-md-3</div>
-                <div class="col-md-6">.col-md-6</div>
-                <div class="col-md-3">.col-md-3</div>
-            </div>
-
-            <h3>Two columns</h3>
-            <p>Get two columns <strong>starting at desktops and scaling to large desktops</strong>.</p>
-            <div class="row">
-                <div class="col-md-8">.col-md-8</div>
-                <div class="col-md-4">.col-md-4</div>
-            </div>
-
-            <h3>Full width, single column</h3>
-            <p class="text-warning">No grid classes are necessary for full-width elements.</p>
-
-            <hr>
-
-            <h3>Two columns with two nested columns</h3>
-            <p>Per the documentation, nesting is easy—just put a row of columns within an existing row. This gives you two columns <strong>starting at desktops and scaling to large desktops</strong>, with another two (equal widths) within the larger column.</p>
-            <p>At mobile device sizes, tablets and down, these columns and their nested columns will stack.</p>
-            <div class="row">
-                <div class="col-md-8">
-                    .col-md-8
-                    <div class="row">
-                        <div class="col-md-6">.col-md-6</div>
-                        <div class="col-md-6">.col-md-6</div>
-                    </div>
-                </div>
-                <div class="col-md-4">.col-md-4</div>
-            </div>
-
-            <hr>
-
-            <h3>Mixed: mobile and desktop</h3>
-            <p>The Bootstrap 3 grid system has four tiers of classes: xs (phones), sm (tablets), md (desktops), and lg (larger desktops). You can use nearly any combination of these classes to create more dynamic and flexible layouts.</p>
-            <p>Each tier of classes scales up, meaning if you plan on setting the same widths for xs and sm, you only need to specify xs.</p>
-            <div class="row">
-                <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
-                <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-            </div>
-            <div class="row">
-                <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-                <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-                <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-            </div>
-            <div class="row">
-                <div class="col-xs-6 col-md-6">.col-xs-6 .col-md-6</div>
-                <div class="col-xs-6 col-md-6">.col-xs-6 .col-md-6</div>
-            </div>
-
-            <hr>
-
-            <h3>Mixed: mobile, tablet, and desktop</h3>
-            <p></p>
-            <div class="row">
-                <div class="col-xs-12 col-sm-8 col-lg-8">.col-xs-12 .col-lg-8</div>
-                <div class="col-xs-6 col-sm-4 col-lg-4">.col-xs-6 .col-lg-4</div>
-            </div>
-            <div class="row">
-                <div class="col-xs-6 col-sm-4 col-lg-4">.col-xs-6 .col-sm-4 .col-lg-4</div>
-                <div class="col-xs-6 col-sm-4 col-lg-4">.col-xs-6 .col-sm-4 .col-lg-4</div>
-                <div class="col-xs-6 col-sm-4 col-lg-4">.col-xs-6 .col-sm-4 .col-lg-4</div>
-            </div>
-            <div class="row">
-                <div class="col-xs-6 col-sm-6 col-lg-6">.col-xs-6 .col-sm-6 .col-lg-6</div>
-                <div class="col-xs-6 col-sm-6 col-lg-6">.col-xs-6 .col-sm-6 .col-lg-6</div>
-            </div>
-
+          </div>
         </div>
+        <div class="contact-button-holder">        
+          <div class="contact-buttons">
+            <a href="https://twitter.com/genbyday" class="twitter"></a>
+            <a href="https://www.linkedin.com/in/genevieve" class="linkedin"></a>
+            <a href = "mailto:genevieveATindiegogoDOTcom" class="email" 
+              onclick = "this.href=this.href
+                .replace(/AT/,'&#64;')
+                .replace(/DOT/,'&#46;')"
+              ></a>
+          </div>
+        </div>
+        <div class="downarrow_big_container">
+          <div class="downarrow"></div>
+        </div>        
+      </li>
+      <li class="section about">
+        <div class="container">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.
+          </p>
+        </div>
+      </li>
+      <li class="section body section1">
+        <div class="container">
+          <div class="logo" >
+            <img class="logo" src="/img/logo_indiegogo.png">
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.
+          </p>
+        </div>
+        <div class="main" >
+            <img class="mock" src="/img/mock_indiegogo.jpg">
+        </div>
+      </li>
+      <li class="section body section2">
+        <div class="container">
+          <div class="logo" >
+            <img class="logo" src="/img/logo_heist.png">
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.
+          </p>
+        </div>
+        <div class="main" >
+            <img class="mock" src="/img/mock_heist.jpg">
+        </div>
+      </li>       
+      <li class="section body section3">
+        <div class="container">
+          <div class="logo" >
+            <img class="logo" src="/img/logo_skype.png">
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.
+          </p>
+        </div>
+        <div class="main" >
+            <img class="mock" src="/img/mock_skype.jpg">
+        </div>
+      </li>      
+    </ul> 
+    </div><!-- /.container -->
 
-		<script src="_/js/app.min.js"></script>	
 
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-		  ga('create', App.settings.ga.urchin, App.settings.ga.url);
-		  ga('send', 'pageview');
-		</script>		
-    </body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/public/js/application.min.js"></script>
+  </body>
 </html>
