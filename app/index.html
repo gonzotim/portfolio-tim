@@ -23,6 +23,18 @@
 
   </head>
   <body>
+    <div class="slideshow">
+      <h1> This is the slideshow </h1>
+      <p> A paragraph or two about yourself. Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
+      <div class="slideshow_controls">
+        <a href="#" class="slideshow_close"> Close </a>
+        <a href="#" class="slideshow_next"> next </a>
+        <a href="#" class="slideshow_previous"> previous </a>
+      </div>
+      <div class="slideshow_image_container">
+      </div>
+
+    </div>
 
     <ul class="slides">
       <li class="section contact">
@@ -62,7 +74,7 @@
         </div>
       </li>
 
-      <li class="section body section1">
+      <li class="section body section1" data-section-id="1">
         <div class="container">
           <div class="logo" >
             <img class="logo" src="http://placehold.it/150x100">
@@ -71,12 +83,33 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.
           </p>
         </div>
-        <div class="main" >
+        <div class="hero_image" >
+            <img class="mock" src="http://placehold.it/2500x1736">
+        </div>
+        <a href="#" class="slideshow_launch"> Read more </a>
+        <div class="slideshow_images">
+          <img class="slide_show_image" src="http://placehold.it/700x536/0FB222/000000">
+          <img class="slide_show_image" src="http://placehold.it/250x173/CE0D0D/000000">
+          <img class="slide_show_image" src="http://placehold.it/50x300/181E63/000000">
+          <img class="slide_show_image" src="http://placehold.it/500x30/E24507/000000">
+        </div>
+      </li>
+
+      <li class="section body section2" data-section-id="2">
+        <div class="container">
+          <div class="logo" >
+            <img class="logo" src="http://placehold.it/150x100">
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.
+          </p>
+        </div>
+        <div class="hero_image" >
             <img class="mock" src="http://placehold.it/2500x1736">
         </div>
       </li>
 
-      <li class="section body section2">
+      <li class="section body section3" data-section-id="3">
         <div class="container">
           <div class="logo" >
             <img class="logo" src="http://placehold.it/150x100">
@@ -85,21 +118,7 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.
           </p>
         </div>
-        <div class="main" >
-            <img class="mock" src="http://placehold.it/2500x1736">
-        </div>
-      </li>
-
-      <li class="section body section3">
-        <div class="container">
-          <div class="logo" >
-            <img class="logo" src="http://placehold.it/150x100">
-          </div>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.
-          </p>
-        </div>
-        <div class="main" >
+        <div class="hero_image" >
             <img class="mock" src="http://placehold.it/2500x1736">
         </div>
       </li>      
@@ -110,6 +129,6 @@
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/public/js/application.min.js"></script>
+    <script src="_/js/app.min.js"></script> 
   </body>
 </html>
