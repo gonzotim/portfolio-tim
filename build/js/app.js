@@ -72,7 +72,7 @@ var App = {
 	push_slideshow_image: function( image_id ) {
 		var image = $( ' .slide_show_image[data-image_id = "' + image_id + '"] ');
 		console.log(image);
-		$( ".slideshow_image_container" ).html( image );
+		$( ".slideshow_image_container" ).html( image.clone() );
 	},
 
 	slideshow_launch: function( section_id ) {
@@ -85,12 +85,6 @@ var App = {
 		var first_image_id = $( "li[data-section-id='" + section_id + "'] .slide_show_image" ).first().attr("data-image_id" );
 		var position = $.inArray( first_image_id, image_ids );
 		$.data( document.body, "position", position );
-
-		console.log(section_id);
-		console.log("image_ids", image_ids);
-		console.log("first_image_id", first_image_id);
-		console.log("position", position);
-
 		App.push_slideshow_image( first_image_id );
 	},
 
@@ -100,15 +94,31 @@ var App = {
 	},
 
 	slideshow_next: function(){
-		var position = $.data( document.body, "position" ) + 1;
+		var current_position = $.data( document.body, "position" );
 		var image_ids = $.data( document.body, "image_ids" );
-		var image_id = image_ids[position];
+		var new_position;
+		if ( current_position + 1 === image_ids.length ) {
+		    new_position = 0;
+		} else { 
+		    new_position = current_position + 1;
+		}
+		var image_id = image_ids[new_position];
 		App.push_slideshow_image( image_id );
-		$.data( document.body, "position", position );
+		$.data( document.body, "position", new_position );
 	},
 
 	slideshow_previous: function(){
-		console.log($.data( document.body, "images" ));
+		var current_position = $.data( document.body, "position" );
+		var image_ids = $.data( document.body, "image_ids" );
+		var new_position;
+		if ( current_position  === 0 ) {
+		    new_position = image_ids.length - 1;
+		} else { 
+		    new_position = current_position - 1;
+		}
+		var image_id = image_ids[new_position];
+		App.push_slideshow_image( image_id );
+		$.data( document.body, "position", new_position );
 	}
 
 };
