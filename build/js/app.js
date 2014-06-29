@@ -82,8 +82,6 @@ var App = {
 		$( ".slideshow_text .project_name" ).html( "<strong>" + project_name + "</strong>" + ". Image " + ($.inArray(image_id.toString(), image_ids) + 1 ) + " of " + image_ids.length  );
 		var caption = $( ".slideshow_image_container img" ).attr("data-caption");
 		$( ".slideshow_text .caption" ).html( caption );
-		var position = $( ".slideshow_image_container img" ).position();
-		$( ".slideshow_text ").css( "margin-left" , position.left - 50);
 	},
 
 	slideshow_launch: function( section_id ) {
