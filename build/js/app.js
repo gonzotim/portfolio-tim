@@ -23,7 +23,7 @@ var App = {
 		console.log("Ready and Listening");
 		
 		$( ".slideshow_launch" ).click(function( event ) {
-  			var section_id = $(this).parent().data("section-id");
+  			var section_id = $(this).parent().parent().data("section-id");
   			//console.log(section_id)
   			event.preventDefault();
   			App.slideshow_launch( section_id );
@@ -64,6 +64,7 @@ var App = {
 		var image_ids = [];
 		$.each(images, function( index ) {
   			$(this).attr("data-image_id", index);
+  			//console.log('add data0image_id', index);
   			image_ids.push(index.toString());
 		});
 		$.data( document.body, "image_ids", image_ids );
@@ -71,8 +72,18 @@ var App = {
 
 	push_slideshow_image: function( image_id ) {
 		var image = $( ' .slide_show_image[data-image_id = "' + image_id + '"] ');
-		console.log(image);
+		var images_from_set = $( ' .slide_show_image[data-image_id = "' + image_id + '"] ').parent().children();
+		var image_ids = [];
+		$.each(images_from_set, function( ) {
+  			image_ids.push($(this).attr("data-image_id"));
+		});
 		$( ".slideshow_image_container" ).html( image.clone() );
+		var project_name = $( ".slideshow_image_container img" ).attr("data-project_name");
+		$( ".slideshow_text .project_name" ).html( "<strong>" + project_name + "</strong>" + ". Image " + ($.inArray(image_id.toString(), image_ids) + 1 ) + " of " + image_ids.length  );
+		var caption = $( ".slideshow_image_container img" ).attr("data-caption");
+		$( ".slideshow_text .caption" ).html( caption );
+		var position = $( ".slideshow_image_container img" ).position();
+		$( ".slideshow_text ").css( "margin-left" , position.left - 50);
 	},
 
 	slideshow_launch: function( section_id ) {
@@ -81,10 +92,11 @@ var App = {
 		$( ".slideshow" ).css( "margin-top", distance_to_top);
 		$( "body" ).css( "overflow", "hidden");
 		var image_ids = $.data( document.body, "image_ids" );
-
+		console.log("section id", section_id);
 		var first_image_id = $( "li[data-section-id='" + section_id + "'] .slide_show_image" ).first().attr("data-image_id" );
 		var position = $.inArray( first_image_id, image_ids );
 		$.data( document.body, "position", position );
+		console.log("first image id", first_image_id);
 		App.push_slideshow_image( first_image_id );
 	},
 

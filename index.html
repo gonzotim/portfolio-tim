@@ -24,16 +24,17 @@
   </head>
   <body>
     <div class="slideshow">
-      <h1> This is the slideshow </h1>
-      <p> A paragraph or two about yourself. Lorem ipsum dolor sit amet, consectetur adipiscing elit </p>
-
-      <div class="slideshow_controls">
-        <a href="#" class="slideshow_close"> close </a>
-        <a href="#" class="slideshow_next"> next </a>
-        <a href="#" class="slideshow_previous"> previous </a>
-      </div>
+      <div class="slideshow_text">
+        <div class="project_name"></div>
+        <div class="caption"></div>
+      </div>     
       <div class="slideshow_image_container">
-      </div>      
+      </div>  
+      <div class="slideshow_controls">
+      	<a href="#" class="slideshow_close"><span class="glyphicon glyphicon-remove"></span></a>
+       	<a href="#" class="slideshow_next"><span class="glyphicon glyphicon-chevron-right"></a>
+        <a href="#" class="slideshow_previous"><span class="glyphicon glyphicon-chevron-left"></a>
+      </div>    
     </div>
 
     <ul class="slides">
@@ -77,7 +78,7 @@
       <li class="section body section1" data-section-id="1">
         <div class="container">
           <div class="logo" >
-            <img class="logo" src="http://placehold.it/150x100">
+            <img class="logo" src="http://placehold.it/150x100&text=project 1 logo">
           </div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.
@@ -86,19 +87,19 @@
         <div class="hero_image" >
             <img class="mock" src="http://placehold.it/2500x1736">
         </div>
-        <a href="#" class="slideshow_launch"> Read more </a>
+        <div class="slideshow_launch_container" ><a href="#" class="slideshow_launch"> READ MORE </a></div>
         <div class="slideshow_images">
-          <img class="slide_show_image" src="http://placehold.it/700x536/0FB222/000000&text=section 1 image 1">
-          <img class="slide_show_image" src="http://placehold.it/250x173/CE0D0D/000000&text=section 1 image 2">
-          <img class="slide_show_image" src="http://placehold.it/50x300/181E63/000000&text=section 1 image 3">
-          <img class="slide_show_image" src="http://placehold.it/500x30/E24507/000000&text=section 1 image 4">
+          <img class="slide_show_image" src="http://placehold.it/1000x700/00ADEF/000000&text=section 1 image 1" data-project_name="Project 1 name" data-caption="A brief caption to add context.">
+          <img class="slide_show_image" src="http://placehold.it/1000x700/EF4036/000000&text=section 1 image 2" data-project_name="Project 1 name" data-caption="A brief caption to add context.">
+          <img class="slide_show_image" src="http://placehold.it/1000x700/F8ED31/000000&text=section 1 image 3" data-project_name="Project 1 name" data-caption="A brief caption to add context.">
+          <img class="slide_show_image" src="http://placehold.it/1000x700/2AB573/000000&text=section 1 image 4" data-project_name="Project 1 name" data-caption="A brief caption to add context.">
         </div>
       </li>
 
       <li class="section body section2" data-section-id="2">
         <div class="container">
           <div class="logo" >
-            <img class="logo" src="http://placehold.it/150x100">
+            <img class="logo" src="http://placehold.it/150x100&text=project 2 logo">
           </div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.
@@ -107,19 +108,19 @@
         <div class="hero_image" >
             <img class="mock" src="http://placehold.it/2500x1736">
         </div>
-        <a href="#" class="slideshow_launch"> Read more </a>
+        <div class="slideshow_launch_container" ><a href="#" class="slideshow_launch"> READ MORE </a></div>
         <div class="slideshow_images">
-          <img class="slide_show_image" src="http://placehold.it/700x536/0FB222/000000&text=section 2 image 1">
-          <img class="slide_show_image" src="http://placehold.it/250x173/CE0D0D/000000&text=section 2 image 2">
-          <img class="slide_show_image" src="http://placehold.it/50x300/181E63/000000&text=section 2 image 3">
-          <img class="slide_show_image" src="http://placehold.it/500x30/E24507/000000&text=section 2 image 4">
+          <img class="slide_show_image" src="http://placehold.it/1000x700/00ADEF/000000&text=section 2 image 1" data-project_name="Project 2 name" data-caption="A brief caption to add context.">
+          <img class="slide_show_image" src="http://placehold.it/1000x700/EF4036/000000&text=section 2 image 2" data-project_name="Project 2 name" data-caption="A brief caption to add context.">
+          <img class="slide_show_image" src="http://placehold.it/1000x700/F8ED31/000000&text=section 2 image 3" data-project_name="Project 2 name" data-caption="A brief caption to add context.">
+          <img class="slide_show_image" src="http://placehold.it/1000x700/2AB573/000000&text=section 2 image 4" data-project_name="Project 2 name" data-caption="A brief caption to add context.">
         </div>        
       </li>
 
       <li class="section body section3" data-section-id="3">
         <div class="container">
           <div class="logo" >
-            <img class="logo" src="http://placehold.it/150x100">
+            <img class="logo" src="http://placehold.it/150x100&text=project 3 logo">
           </div>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec purus in ante pretium blandit. Aliquam erat volutpat. Nulla libero lectus.
@@ -128,12 +129,12 @@
         <div class="hero_image" >
             <img class="mock" src="http://placehold.it/2500x1736">
         </div>
-        <a href="#" class="slideshow_launch"> Read more </a>
+        <div class="slideshow_launch_container" ><a href="#" class="slideshow_launch"> READ MORE </a></div>
         <div class="slideshow_images">
-          <img class="slide_show_image" src="http://placehold.it/700x536/0FB222/000000&text=section 3 image 1">
-          <img class="slide_show_image" src="http://placehold.it/250x173/CE0D0D/000000&text=section 3 image 2">
-          <img class="slide_show_image" src="http://placehold.it/50x300/181E63/000000&text=section 3 image 3">
-          <img class="slide_show_image" src="http://placehold.it/500x30/E24507/000000&text=section 3 image 4">
+          <img class="slide_show_image" src="http://placehold.it/1000x700/00ADEF/000000&text=section 3 image 1" data-project_name="Project 3 name" data-caption="A brief caption to add context.">
+          <img class="slide_show_image" src="http://placehold.it/1000x700/EF4036/000000&text=section 3 image 2" data-project_name="Project 3 name" data-caption="A brief caption to add context.">
+          <img class="slide_show_image" src="http://placehold.it/1000x700/F8ED31/000000&text=section 3 image 3" data-project_name="Project 3 name" data-caption="A brief caption to add context.">
+          <img class="slide_show_image" src="http://placehold.it/1000x700/2AB573/000000&text=section 3 image 4" data-project_name="Project 3 name" data-caption="A brief caption to add context.">
         </div>        
       </li>      
     </ul> 
