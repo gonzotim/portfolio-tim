@@ -122,6 +122,7 @@ html{
 							background-image:@about-profile-pic;
 							height: 172px;
 							width: 172px;
+							border-radius: 50%;
 							background-size: 100%;
 							display: none;
 							@media(min-width:768px){
@@ -134,7 +135,7 @@ html{
 							width: @headerblock-small;
 							h1{
 								margin-top: 0px;
-								@media(min-width:768px){margin-top: 35px;}
+								@media(min-width:768px){margin-top: @h1-margin-top}
 							}
 							@media(min-width:768px){
 								width: @headerblock-large;
