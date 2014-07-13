@@ -493,26 +493,6 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
-	"\/build\/less\/partials\/viewport.less": {
-		"allowInsecureImports": 0,
-		"createSourceMap": 0,
-		"disableJavascript": 0,
-		"fileType": 1,
-		"ieCompatibility": 1,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/build\/less\/partials\/viewport.less",
-		"outputAbbreviatedPath": "\/app\/_\/css\/viewport.css",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 2,
-		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
-		"shouldRunBless": 0,
-		"strictImports": 0,
-		"strictMath": 0,
-		"strictUnits": 0
-		},
 	"\/build\/lib\/bootstrap\/css\/bootstrap-theme.min.css": {
 		"fileType": 16,
 		"ignore": 0,
