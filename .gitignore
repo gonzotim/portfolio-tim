@@ -6,3 +6,5 @@
 .sass-cache
 
 .codekit-cache
+
+app/_/css/app.css
