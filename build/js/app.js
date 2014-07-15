@@ -22,7 +22,7 @@ var App = {
 		// Application Listeners can be loaded here for easy configuration		
 		console.log("Ready and Listening");
 		
-		$( ".slideshow_launch" ).click(function( event ) {
+		$( ".slideshow_launch, .hero_image .mock" ).click(function( event ) {
   			var section_id = $(this).parent().parent().data("section-id");
   			//console.log(section_id)
   			event.preventDefault();
