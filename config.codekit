@@ -784,15 +784,6 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
-	"\/index.html": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/index.html",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
 	"\/old_index.html": {
 		"fileType": 8192,
 		"ignore": 0,
