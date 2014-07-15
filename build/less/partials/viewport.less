@@ -66,19 +66,18 @@ html{
 					padding: 15px;
 				}
 				.slideshow_next{
+					background-color: red;
 					position: absolute;
 					z-index: 5;
 					font-size: 25px;
-					top: 0;
+					top: 50%;
 					right: 0px;
 					padding-left: 15px;
 					padding-right: 15px;
-					height: 100%;
-					span{
-						top: 50%;
-					}
+	
 				}
 				.slideshow_previous{
+					background-color: red;
 					position: absolute;
 					z-index: 5;
 					font-size: 25px;
@@ -239,7 +238,10 @@ html{
 				position: relative;
 				.logo{
 					text-align: center;
-					margin: 70px 0px 60px 0px;
+					margin: 20px 0px 0px 0px;
+					@media(min-width:1200px){
+						margin: 70px 0px 60px 0px;
+					}
 				}
 				p{
 					font-family: @body-font;
