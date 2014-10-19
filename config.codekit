@@ -20,17 +20,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/app\/_\/img\/a bit sic.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 392351,
-		"inputAbbreviatedPath": "\/app\/_\/img\/a bit sic.png",
-		"outputAbbreviatedPath": "\/app\/_\/img\/a bit sic.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/app\/_\/img\/groupiter_feed.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -368,17 +357,6 @@
 		"initialSize": 1132,
 		"inputAbbreviatedPath": "\/app\/_\/img\/rnd-twitter.png",
 		"outputAbbreviatedPath": "\/app\/_\/img\/rnd-twitter.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/app\/_\/img\/Sam Kolb Ladies and Gentlemen.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 296358,
-		"inputAbbreviatedPath": "\/app\/_\/img\/Sam Kolb Ladies and Gentlemen.png",
-		"outputAbbreviatedPath": "\/app\/_\/img\/Sam Kolb Ladies and Gentlemen.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
