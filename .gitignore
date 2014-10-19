@@ -3,6 +3,8 @@
 
 *.md
 
+.config.codekit
+
 .sass-cache
 
 .codekit-cache
