@@ -3,7 +3,7 @@
 
 *.md
 
-*/codekit-config.json
+config.codekit
 
 .sass-cache
 
